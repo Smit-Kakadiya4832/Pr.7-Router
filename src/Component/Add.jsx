@@ -54,7 +54,7 @@ const Add = () => {
                         <tr>
                             {/* <td>Name :-</td> */}
                             <td><Form.Control  variant="primary" type="text" name="des" onChange={handleChange} value={input.des} placeholder="To-Do Title" /></td>
-                            <td><Form.Control  variant="primary" type="text" name="name" onChange={handleChange} value={input.name} placeholder="To-Do Title" /></td>
+                            <td><Form.Control  variant="primary" type="text" name="name" onChange={handleChange} value={input.name} placeholder="Description" /></td>
                             <Button type="submit" variant="outline-success" onClick={() => handleSubmit()} >Submit form</Button>
                         </tr>
                     </tbody>
