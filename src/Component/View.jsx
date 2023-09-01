@@ -10,6 +10,7 @@ const View = () => {
     const deleteData = (id) => {
         let ans = alldata.filter((item) => {
             return item.id !== id;
+            
         })
         setAlldata(ans);
         alert("Delete Data");

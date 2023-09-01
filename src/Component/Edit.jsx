@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import { Form } from "react-bootstrap";
 
 const Edit = () => {
     const navigate = useNavigate();
@@ -65,11 +66,11 @@ const Edit = () => {
         <>
             <center>
                 <h1>Update Page</h1>
-                <table border={1} striped bordered hover variant="light">
+                <table border={1} striped bordered hover variant="light" className="container">
                     <tr>
                         <td>Edit</td>
-                        <td><input type="text" name="name" onChange={handleChange} value={input.name} /></td>
-                        <td><input type="text" name="des" onChange={handleChange} value={input.des} /></td>
+                        <td><Form.Control type="text" name="name" onChange={handleChange} value={input.name} /></td>
+                        <td><Form.Control type="text" name="des" onChange={handleChange} value={input.des} /></td>
                     </tr>
                     <tr>
                         <td></td>
