@@ -28,7 +28,7 @@ const View = () => {
         <>
             <center>
                 <h1>View Page</h1>
-                <Table border={1} striped bordered hover variant="light">
+                <Table border={1} striped bordered hover variant="light" className="container">
                     <thead>
                     <tr>
                         <td>Id</td>
