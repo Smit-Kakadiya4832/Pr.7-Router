@@ -10,9 +10,9 @@ const View = () => {
     const deleteData = (id) => {
         let ans = alldata.filter((item) => {
             return item.id !== id;
-            
         })
         setAlldata(ans);
+        localStorage.setItem('crud',JSON.stringify(ans));
         alert("Delete Data");
     }
 
